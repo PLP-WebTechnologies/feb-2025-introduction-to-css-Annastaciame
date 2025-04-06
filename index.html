@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List & Registration</title>
+    <link relstylesheet" href="styles.css">
+    
+</head>
+<body bgcolor ="orange">
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Healthy Fruits</h2>
+    <ol type="I">
+        <li>Mango </li>
+        <li>Blueberry</li>
+        <li>Kiwi</li>
+        <li>Grapes</li>
+        <li>Oranges</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Fruits</h2>
+    <img src=https://www.pexels.com/photo/sliced-fruits-on-tray-1132047/ alt="fruits" >
+
+    <!-- Contacts Table -->
+    <h2>Contact List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anorny Chege</td>
+                <td>Kasarani, Nairobi</td>
+                <td>+254700123456</td>
+                <td>anto@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jackie Mso</td>
+                <td>Diani, Mombasa</td>
+                <td>+254700087654</td>
+                <td>mso@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Daudi Kabka</td>
+                <td>Dala, Kisumu</td>
+                <td>+254722459879</td>
+                <td>kabaks@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Emily Ochami</td>
+                <td>Kenya, Nakuru</td>
+                <td>+25473300321</td>
+                <td>echami@gmail.com/td>
+            </tr>
+            <tr>
+                <td>Mark Ndungu</td>
+                <td>Eldyt, Eldoret</td>
+                <td>+25474439098</td>
+                <td>mark@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+  
+    <h2>Registration Form</h2>
+    <form action="Submit" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+        <br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required> <label for="female">Female</label>
+        <br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+        </select>
+        <br>
+        
+        <label>Interests:</label>
+        <input type="checkbox" id="tech" name="interests" value="Technology"> <label for="tech">Technology</label>
+        <input type="checkbox" id="sports" name="interests" value="Sports"> <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="Music"> <label for="music">Music</label>
+        <br>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
